@@ -27,20 +27,62 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+    <style type="text/css">
+      
+      #ux-designer {
+        font-family: "Barlow Condensed", Arial, sans-serif;
+        position: absolute;
+        bottom: 7vh;
+        right: 5vh;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        font-size: 9vw;
+        text-transform: uppercase;
+        z-index: 1;
+        color: #fff;
+        color: transparent;
+        line-height: .1vh;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #fff;
+
+      }
+      @media only screen and (max-width: 1000px) {
+        #ux-designer  {
+            right: 5vh;
+            bottom: calc(100vh - 60vw);
+          }
+      }
+      @media only screen and (max-width: 770px) {
+          #ux-designer  {
+            bottom: calc(100vh - 90vw);
+            right: unset;
+            left: 1vh;
+          }
+      @media only screen and (max-width: 500px) {
+          #ux-designer  {
+            bottom: calc(100vh - 110vw);
+            
+            right: unset;
+            left: 1vh;
+          }
+        }
+    </style>
   </head>
   <body>
     <div style="overflow-x: hidden">
 	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="index.html">LOUISE PORTFOLIO</a>
+	      <a class="navbar-brand" href="index.html">LOUISE GRÖNDAHL</a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
+	        <span class="oi oi-menu"></span>
 	      </button>
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
-	        	<li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-	        	<li class="nav-item"><a href="work.html" class="nav-link">Projects</a></li>
+	        	<li class="nav-item"><a href="#about" class="nav-link">Home</a></li>
+	        	<li class="nav-item"><a href="work.html" class="nav-link">Portfolio</a></li>
 	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
 	        </ul>
 	      </div>
@@ -49,7 +91,8 @@
     <!-- END nav -->
     
     <section id="home-section" class="hero">
-    	<h1 class="vr text-center">Louise</h1>
+      <h1 class="vr text-center">Louise</h1>
+    	<h1 id="ux-designer" >UX-Designer</h1>
 		  <div class="js-fullheight home-wrap d-flex">
 		  	<div class="half order-md-last"></div>
 		  	<div class="half">
@@ -85,7 +128,9 @@
     		<div class="row justify-content-end">
     			<div class="col-md-8" >
     				<h2>UX <span>Designer</span> and <span>MSc student</span> at KTH.  </h2>
-    				<p>I am an engineer student who is nearing the end of her education and is ready for new challenges and fun! UX and project management is two of my biggest interest and areas of work I want to discover more. More about me, I live in Stockholm and on my free time I love to spend time in the archipelago. Hanging out with friends and family is highly rated for me. I plan to graduate in June 2020. If you want to know more about previous workplaces etc. please visit my <a target="_blank" href="https://www.linkedin.com/in/louise-grondahl">linkedIn</a> </p> 
+    				<p>I am an engineer student who is nearing the end of her education and is ready for new challenges and fun! UX and project management is two of my biggest interest and areas of work I want to discover more. 
+              <p>More about me, I live in Stockholm and on my free time I love to spend time in the archipelago. Hanging out with friends and family is highly rated for me. </p>
+              I plan to graduate in June 2020. If you want to know more about previous workplaces etc. please visit my <a target="_blank" href="https://www.linkedin.com/in/louise-grondahl">linkedIn</a> </p> 
 
 
     			</div>
@@ -97,15 +142,6 @@
       <div class="container">
         <div class="row no-gutters d-flex">
           <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services d-block">
-              <div class="icon"><span class="flaticon-web-programming"></span></div>
-              <div class="media-body">
-                <h3 class="heading mb-3">Programming</h3>
-                <p>Worked with many different programming languages in school even though it is not my main focus it contributes to a greater knowledge of web and app development. </p>
-              </div>
-            </div>      
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
             <div class="media block-6 services active d-block">
               <div class="icon"><span class="flaticon-layers"></span></div>
               <div class="media-body">
@@ -116,10 +152,10 @@
           </div>
           <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
             <div class="media block-6 services d-block">
-              <div class="icon"><span class="flaticon-idea"></span></div>
+              <div class="icon"><span class="flaticon-web-programming"></span></div>
               <div class="media-body">
-                <h3 class="heading mb-3">Team Work</h3>
-                <p>I am an energetic and happy person who thrives in a team. I believe in collaboration and helping each other to get the best results.</p>
+                <h3 class="heading mb-3">Programming</h3>
+                <p>Familiar with PHP, SQL. <p>Basic knowledge within Python, Javascript and React.js.</p> Higher knowledge within HTML and css. </p>
               </div>
             </div>      
           </div>
@@ -132,6 +168,16 @@
               </div>
             </div>      
           </div>
+          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services d-block">
+              <div class="icon"><span class="flaticon-idea"></span></div>
+              <div class="media-body">
+                <h3 class="heading mb-3">Team Work</h3>
+                <p>I am an energetic person who thrives in a team.  I often have a leading role in a group work. <p> I believe in a strong collaboration to get the best possible results. </p></p>
+              </div>
+            </div>      
+          </div>
+
         </div>
       </div>
     </section>
@@ -141,7 +187,7 @@
     	<div class="container-fluid">
     		<div class="row justify-content-center pb-3">
           <div class="col-md-12 mb-5 heading-section text-center ftco-animate">
-            <h2 class="mb-5">Latest &amp; <span>Greatest</span></h2>
+            <h2>Portfolio</h2>
           </div>
         </div>
     	</div>
@@ -291,6 +337,8 @@
 
     </section>
 
+
+
     <footer class="ftco-footer ftco-section">
       <div class="container">
         <div class="row mb-5">
@@ -305,11 +353,13 @@
 
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
-            	<h2 class="ftco-heading-2">Have a Questions?</h2>
+            	<h2 class="ftco-heading-2">Menu</h2>
             	<div class="block-23 mb-3">
-	              <ul>
-	                <li><a href="mailto:louise@grondahl.nu"><span class="icon icon-envelope"></span><span class="text">louise@grondahl.nu</span></a></li>
-	              </ul>
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item"><a href="#about" class="nav-link">Home</a></li>
+                  <li class="nav-item"><a href="work.html" class="nav-link">Portfolio</a></li>
+                  <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
 	            </div>
             </div>
           </div>
