@@ -1,0 +1,3 @@
+## Starta server:
+
+`live-server`
